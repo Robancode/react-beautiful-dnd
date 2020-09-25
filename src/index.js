@@ -48,7 +48,11 @@ class App extends React.Component {
           const tasks = column.taskIds.map(
             (taskId) => this.state.tasks[taskId]
           );
-          return <Column key={column.id} column={column} tasks={tasks} />;
+          return (
+            <Column key={column.id} column={column} tasks={tasks}>
+              {console.log(tasks)}
+            </Column>
+          );
         })}
       </DragDropContext>
     );
