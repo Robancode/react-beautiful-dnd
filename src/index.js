@@ -9,7 +9,7 @@ class App extends React.Component {
   state = initialData;
 
   onDragEnd = (result) => {
-    //Todo reorder our column
+    //Todo reorder our columns
 
     console.log("dragend");
   };
