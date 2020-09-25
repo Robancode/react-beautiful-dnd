@@ -50,7 +50,7 @@ class App extends React.Component {
           );
           return (
             <Column key={column.id} column={column} tasks={tasks}>
-              {console.log(tasks)}
+              {/* {console.log(tasks)} */}
             </Column>
           );
         })}

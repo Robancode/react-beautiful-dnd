@@ -18,8 +18,9 @@ export default class Task extends React.Component {
           <Container
             {...provided.draggabbleProps}
             {...provided.dragHandleProps}
-            innerRef={provided.innerRef}
+            ref={provided.innerRef}
           >
+            {console.log(this.props.index)}
             {this.props.task.content}
           </Container>
         )}
