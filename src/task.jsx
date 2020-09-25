@@ -16,11 +16,11 @@ export default class Task extends React.Component {
       <Draggable draggableId={this.props.task.id} index={this.props.index}>
         {(provided) => (
           <Container
-            {...provided.draggabbleProps}
+            {...provided.draggableProps}
             {...provided.dragHandleProps}
             ref={provided.innerRef}
           >
-            {console.log(this.props.index)}
+            {console.log(this.props.task.id)}
             {this.props.task.content}
           </Container>
         )}

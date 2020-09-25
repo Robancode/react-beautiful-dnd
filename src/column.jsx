@@ -31,7 +31,7 @@ export default class Column extends React.Component {
               {this.props.tasks.map((task, index) => (
                 <Task key={task.id} task={task} index={index} />
               ))}
-              {/* {console.log(this.props.tasks[0].id)} */}
+              {/* {console.log(this.props.tasks)} */}
               {provided.placeholder}
             </TaskList>
           )}
